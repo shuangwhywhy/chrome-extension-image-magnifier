@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            min-width: 600px;
+            min-height: 600px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        input {
+            width: 200px;
+            height: 40px;
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            vertical-align: middle;
+        }
+        
+        .zoom {
+            width: 50px;
+        }
+        
+        .bg-color {
+            width: 40px;
+        }
+        
+        .opacity {
+            width: 50px;
+        }
+        
+        .thick {
+            width: 50px;
+        }
+        
+        .img-src {
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .canvas {
+            width: 100%;
+        }
+        
+        .inline {
+            display: inline-block;
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="inline">
+            <label>放大比例</label> <input class="zoom" value="2" type="number" />
+        </div>
+        <div class="inline">
+            <label>线框粗细</label> <input class="thick" value="4" type="number" />
+        </div>
+        <div class="inline">
+            <label>遮罩颜色</label> <input class="bg-color" value="#000000" type="color" /><input class="opacity" value="0.3" type="number" step="0.1" />
+        </div>
+        <div class="inline">
+            <button>上传图片</button><input class="img-src" type="file" accept="image/*" />
+        </div>
+    </div>
+    <canvas class="canvas" width="6000" height="6000"></canvas>
+    <script lang="javascript" type="text/javascript" src="./popup.js"></script>
+</body>
+
+</html>
