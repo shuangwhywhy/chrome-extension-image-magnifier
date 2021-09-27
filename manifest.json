@@ -12,7 +12,5 @@
         "48": "/images/icon.png",
         "128": "/images/icon.png"
     },
-    "permissions": [
-        "clipboardRead", "clipboardWrite", "desktopCapture", "fileBrowserHandler", "fileSystemProvider"
-    ]
+    "permissions": []
 }
